@@ -1,0 +1,2229 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+ 
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif; 
+}
+
+button{
+    font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+
+}
+
+body p{
+    color: rgb(68, 53, 53);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.6rem;
+
+}
+
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+.container{
+    /* width: 82%; */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1370px;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+/** Brand Info Section Starts **/ 
+
+.brandinfo{
+    width: 100%;
+    background-color: #ddd;
+    
+    
+}
+
+.brandinfo-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 0rem;
+}
+
+.phone-email{
+    display: flex;justify-content: space-between;
+}
+
+.phone-email span{
+    color: #FF5200;
+}
+
+.phone-email p{
+    padding: 0rem 0.7rem; 
+    border-left: 1px solid rgb(253, 248, 248);
+
+}
+
+.icons {
+    margin-top: 6px;
+}
+
+.brandinfo-flex ul{
+    display: flex;
+}
+
+.brandinfo-flex li{
+    list-style: none;
+}
+
+.brandinfo-flex ul .fa{
+    font-size: 1.1rem;
+    color: rgb(58, 33, 33);
+}
+
+.brandinfo-flex a {
+    padding: 0rem 1rem;
+    border-left: 1px solid #faf1f1;
+}
+
+.brandinfo-flex a:last-child{
+    border-right: 1px solid #faf1f1;
+} 
+
+.brandinfo-flex ul .fa:hover{
+    color: #FF5200;
+    transition-duration: 0.3s;
+}
+
+/** Brand Imfo Section **/
+.nav-flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5% 1rem 5%;
+    position:relative;
+    align-items: center;
+}
+
+.nav-flex ul {
+    display: flex;
+}
+
+.nav-flex ul a{
+    padding: 0rem 0.6rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(53, 38, 38);
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-flex ul a:hover{
+    color: #FF5200;
+   
+}
+
+.nav-flex ul li{
+    list-style: none;
+}
+
+.customIcon{
+    display: none;
+}
+
+.customIcon:hover .fa{
+    color: #FF5200;
+    transition-duration: 0.4s;
+} 
+
+.customIcon .fa{
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.nav-flex .logo{
+    
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #333;
+    text-decoration: none;
+}
+
+.logo span{
+    color: #FF5200;
+}
+
+.nav-flex ul a .fa{
+    margin-left: 0.3rem;
+}
+/** Navigation Section Starts **/
+
+/** Slider Part Starts **/ 
+.slide-bg{
+    width: 100%;
+    background-image: url(images/slide2.jpg);
+    padding: 6rem 0rem;
+    background-position: center;
+    background-size: cover;
+}
+.slideText{
+    width: 60%;
+}
+
+.slideText h1{
+    font-size: 3.3rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.slideText p{
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    margin: 1.8rem 0rem;
+}
+
+/* .smBtn{
+    background-color: #FF5200;
+    padding: 0.9rem 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: 0;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    border-radius: 4px;
+    letter-spacing: 0.1rem;
+
+} */
+
+.smBtn:hover{
+    background-color: #333;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+/** Slider part Ends **/
+
+/** 2nd Info Section Starts **/
+.info-section{
+    width: 100%;
+    padding: 4.8rem 0rem;
+    background-color: rgb(236, 221, 221);
+}
+
+.info-mdsection{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.info-mdsection .activeLink:active{
+    background-color: #FF5200;
+}
+
+.info-mdsection .main{
+    width: 23.5%;
+    text-align: center;
+    background-color: white;
+    padding: 2rem 1rem;
+    border-radius: 4px;
+
+}
+
+.info-mdsection .main h2{
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.info-mdsection .main:hover{
+    background-color: #FF5200;
+    color: white;
+    transition-duration: 0.6s;
+    cursor: pointer;
+}
+
+.info-mdsection  .main:hover p{
+    color: white;
+}
+
+.info-mdsection  .main:hover .icon .fa{
+    color: white;
+}
+
+.info-mdsection .main a{
+    color: #FF5200;
+    font-weight: 500;
+}
+
+.info-mdsection  .main:hover a{
+    color: white;
+}
+
+
+.info-mdsection .main p{
+    padding: 1.3rem 0rem;
+}
+
+.info-mdsection .main span{
+    color: #FF5200;
+}
+
+
+.info-mdsection .main span{
+    font-size: 2.7rem;
+}
+
+.info-mdsection .activeLink{
+    color: white;
+    background-color: #FF5200;
+}
+
+
+.info-mdsection  .activeLink p{
+    color: white;
+}
+
+.info-mdsection  .activeLink .fa{
+    color: white;
+}
+
+.info-mdsection  .activeLink a{
+    color: white;
+}
+
+
+/** 2nd Info Section Ends **/
+
+/** Work With Our Teams Section Starts **/ 
+
+.work-with-team{
+    width: 100%;
+}
+.wwt-midsection{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 5.5rem 0rem; */
+    padding: 5.5rem 5% 5.5rem 5%;
+    flex-wrap: wrap;
+}
+
+.wwt-midsection .text-info{
+    width: 50%;
+}
+
+.wwt-midsection .pic{
+    width: 43%;
+}
+
+.wwt-midsection .pic img{
+    width: 100%;
+}
+
+.wwt-midsection h1{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+  
+}
+
+.wwt-midsection p{
+    padding: 1.2rem 0rem;
+}
+
+.text-info .listItems{
+    padding-bottom: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wwt-midsection .li-icon{
+    display: flex;
+}
+
+.text-info .listItems li{
+    list-style: none;
+
+}
+
+.text-info .listItems a{
+    line-height: 2rem;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(58, 42, 42);
+}
+
+
+.li-icon:hover a{
+    color: #FF5200;
+    transition-duration: 0.4s;
+}
+
+.text-info .listItems span{
+    margin-right: 1rem;
+}
+
+.smBtn{
+    background-color: #FF5200;
+    padding: 0.9rem 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: 0;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    border-radius: 4px;
+    letter-spacing: 0.1rem;
+
+}
+
+
+/** Work With Our Teams Section Ends **/ 
+/** Big Cap Background Starts **/
+
+.cap-bg{
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.1),rgba(4,9,30,0.7)), url(images/bigbg.jpg);
+    padding: 5rem 0rem;
+    background-position: center;
+    background-color: rgb(77, 37, 37);
+}
+
+.cap-bg .main{
+    width: 23%;
+    text-align: center;
+}
+
+.cap-bg span{
+    font-size: 2.7rem;
+    color: white;
+}
+
+.cap-bg h1{
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: white;
+    margin: 1rem 0rem;
+}
+
+.cap-bg h2{
+    font-size: 1.3rem;
+    color: white;
+    text-transform: uppercase;
+
+}
+
+.cap-bg .mid-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/** Big Cap Background Ends **/
+
+/** More From Us Section Starts **/
+
+.more-section{
+    width: 100%;
+    padding: 4rem 0rem;
+    background-color: rgb(240, 226, 226);
+}
+
+.sameHr h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    font-weight: 600;
+}
+
+.sameHr{
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sameHr hr{
+    border: 0;
+    border-bottom: 3px solid #FF5200;
+    width: 5%;
+    text-align: center;
+    display: inline-block;
+    margin: 1rem 0rem;
+}
+
+
+.more-section .mid-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.more-section .main{
+    width: 24%;
+}
+
+.more-section .main img{
+    width: 100%;
+}
+
+.more-section .main h3{
+    margin-top: 1.6rem;
+    margin-bottom: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(36, 33, 33);
+}
+
+/** More From Us Section Ends **/
+
+/** Price Plan Starts **/
+
+.pricePlan{
+    width: 100%;
+    padding: 4rem 0rem;
+    
+}
+
+.pricePlan .mid-section{
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: #FAFAFA; */
+    margin-top: 3.6rem;
+ 
+}
+
+.pricePlan .inner{
+    background-color: white;
+    width: 31.4%;
+    border-radius: 4px;
+    padding: 2rem 3rem;
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 0px 15px 6px #f6f6f6;
+}
+
+/* .pricePlan .inner:first-child{
+    box-shadow: 20px 0px 17px #f6f6f6;
+}   */
+/*
+ .pricePlan .inner:nth-child(2){
+    box-shadow: 0px 0px 0px 8px #f6f6f6;
+} 
+*/
+ /* .pricePlan .inner:last-child{
+    box-shadow: 0px 0px 0px 8px #f6f6f6;
+}   */
+
+.pricePlan .inner .listIcon{
+    margin: 19px 0px;
+}
+
+.pricePlan .inner .listIcon{
+    display: flex;
+}
+
+.pricePlan .inner .onlyIcon{
+    width: 10%;
+}
+
+.pricePlan .inner h1{
+    font-size: 2.3rem;
+    font-family: arial black;
+}
+
+.pricePlan .inner h1 span{
+    font-size: 1rem;
+}
+
+.pricePlan .inner li{
+    list-style: none;
+    
+    
+}
+
+.pricePlan .listIcon span{
+    color: #FF5200;
+}
+
+.pricePlan .inner button{
+    margin-top: 1.5rem;
+}
+
+/** Price Plan Starts **/
+
+/** Latest Idea Section Starts **/
+
+.latest-idea{
+    width: 100%;
+    display: flex;
+}
+
+.latest-idea h1{
+    font-size: 2rem;
+}
+
+.latest-idea .left{
+    width: 50%;
+}
+.latest-idea .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.latest-idea .right {
+    width: 50%;
+    padding: 0 3%;
+    background-color: #333;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.latest-idea .right h2{
+    font-size: 1.4rem;
+}
+
+.latest-idea .right .textAndicon{
+    
+    display: flex;
+    padding-top: 2rem;
+
+}
+
+.latest-idea .padding-para{ 
+    padding-top: 0.7rem;
+    color: white;
+}
+
+.latest-idea .textAndicon p{
+    padding-top: 00.3rem;
+    color: white;
+}
+
+.latest-idea .icon{
+    
+    text-align: center;
+    margin-right: 1.2rem;
+}
+
+.latest-idea .icon span{
+    font-size: 3.6rem;
+    color: #FF5200;
+
+}
+
+/** Latest Idea Section Starts **/
+
+/** Our Team Section Starts **/
+.our-team-section{
+    width: 100%;
+    padding: 6rem 0rem;
+}
+.our-team-section .team-mid-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 0rem;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.our-team-section .main{
+    width: 22.7%;
+    height: 100%;
+    
+     
+    
+}
+
+.our-team-section .main .pic{
+    height: 61%;
+    position: relative;
+    overflow: hidden;
+}
+
+.our-team-section .main img{
+    width: 100%;
+    display: block;
+    
+}
+
+.smBtn2{
+    background-color: #333;
+    padding: 0.9rem 1.7rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: 0;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    border-radius: 4px;
+    letter-spacing: 0.1rem;
+}
+
+.smBtn2:hover{
+    background-color: #FF5200;
+    cursor: pointer;
+}
+
+.btnDiv{
+    text-align: center;
+}
+
+.our-team-section .main .text{
+    padding: 2.5rem 0rem;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    
+}
+
+.our-team-section .main .text p{
+    padding-top: 0.5rem;
+}
+
+.our-team-section .main .text h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.our-team-section .main .social-icons {
+    width: 100%;
+    position: absolute;
+    top: 66%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.our-team-section .social-icons ul{
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+       
+}
+
+.our-team-section .social-icons ul li{
+    list-style: none;
+}
+
+.our-team-section .social-icons ul a{
+    margin: 0 0.3rem;
+    color: white;
+     
+}
+
+
+.our-team-section .social-icons ul .fa:hover{
+    background-color: white;
+    color: #333;
+}
+
+
+.our-team-section .main .social-icons .fa-facebook{
+    background-color: #3b5998;
+    padding: 9px 13px;
+    opacity: 0;
+    
+}
+
+.our-team-section .main  .social-icons .fa-twitter{
+    background-color: #00acee;
+    padding: 8px 9px;
+    opacity: 0;
+       
+}
+
+.our-team-section .main  .social-icons .fa-google-plus{
+    background-color: #db4a39;
+    padding: 8px 7px;
+    opacity: 0;
+
+}
+
+.our-team-section .main  .social-icons .fa-linkedin{
+    background-color: #0077b5;
+    padding: 9px 10px;
+    opacity: 0;
+}
+
+.our-team-section .team-mid-section .main:hover .fa-facebook{
+    transform: translateY(15px); 
+    opacity: 1;
+    transition-duration: 0.7s;
+}
+
+.our-team-section .team-mid-section .main:hover .fa-twitter{
+    transform: translateY(15px); 
+    opacity: 1;
+    transition-duration: 0.6s;
+}
+
+.our-team-section .team-mid-section .main:hover .fa-google-plus{
+    transform: translateY(15px); 
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+
+.our-team-section .team-mid-section .main:hover .fa-linkedin{
+    transform: translateY(15px); 
+    opacity: 1;
+    transition-duration: 0.2s;
+}
+
+.our-team-section .social-icons ul a span{
+    color: white;
+    border-radius: 100%;
+    
+}
+
+
+/** Our Team Section Ends **/
+
+/** Our Project Section Starts **/
+
+.our-projects{
+    width: 100%;
+    padding: 5rem 0rem;
+    background-color: rgb(245, 229, 229);
+}
+
+.our-projects .one{
+    margin-top: 2.4rem;
+}
+
+.project-midsection{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-midsection .inner{
+   width: 31.5%;
+    padding-top: 6rem;
+    background-size: cover;
+    background-position: center;
+    margin: 1rem 0rem;  
+}
+
+.project-midsection .inner h2{
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.project-midsection .inner h5{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+    text-decoration: underline;
+}
+
+.project-midsection .inner a{
+    color: white;
+}
+
+.project-midsection .inner .fa{
+    
+    font-size: 12px;
+}
+
+.project-midsection .inner1{
+    background: linear-gradient(rgba(0,0,0,0.4)0%, rgba(0,0,0, 0.5)100%), url(images/work/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.project-midsection .inner2{
+    background: linear-gradient(rgba(0,0,0,0.4)0%, rgba(0,0,0, 0.5)100%), url(images/work/2.jpg);
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+.project-midsection .inner3{
+    background: linear-gradient(rgba(0,0,0,0.4)0%, rgba(0,0,0, 0.5)100%), url(images/work/3.jpg);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.project-midsection .inner4{
+    background: linear-gradient(rgba(0,0,0,0.4)0%, rgba(0,0,0, 0.5)100%), url(images/work/4.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.project-midsection .inner5{
+    background: linear-gradient(rgba(0,0,0,0.4)0%, rgba(0,0,0, 0.5)100%), url(images/work/5.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.project-midsection .inner6{
+    background: linear-gradient(rgba(0,0,0,0.4)0%, rgba(0,0,0, 0.5)100%), url(images/work/6.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.project-midsection .caption{
+    color: white;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+/** Our Project Section Ends **/
+
+/** Latest News Section Starts **/
+
+.latest-news{
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 2.3rem;
+
+    /**padding: 5rem 0rem;**/
+}
+
+.news-mid-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem
+}
+
+.news-mid-section .single{
+    width: 31.5%;
+}
+
+.news-mid-section .single:hover img{
+    transform: scale(1.1);
+}
+
+.news-mid-section .single .pic{
+
+    overflow: hidden; /** Use to Stop The Increasing Bigger Size Of The div **/
+}
+
+.single .pic img{
+    width: 100%;
+    transition-duration: 0.6s;
+    display: block;
+
+}
+
+.news-mid-section .single .caption{
+    padding-top: 1.6rem;
+    padding-right: 1.6rem;
+    padding-left: 1.6rem;
+    padding-bottom: 1.6rem;
+    border: 1px solid #ddd;
+    border-top: 0; 
+}
+
+.news-mid-section .single .caption p{
+    margin-bottom: 1rem;
+}
+
+.news-mid-section .single .caption a{
+    color: #FF5200;
+    
+}
+
+.news-mid-section .single .caption h3{
+    margin: 1.2rem 0rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.news-mid-section .single .caption h4{
+    font-weight: 500;
+}
+
+/** Latest News Section Ends **/
+
+/** Subscribe Section Starts **/
+
+.subscribe{
+    width: 100%;
+}
+
+.subs-mid-section{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF5200;
+    padding: 2rem;
+    position: relative;
+    top: 45px;
+}
+
+.subs-mid-section .first{
+    width: 39%;
+}
+
+.subs-mid-section .second{
+    width: 30%;
+}
+
+.subs-mid-section .the-end{
+    width: 29%;
+    padding-left: 1.2rem;
+}
+
+
+.subs-mid-section .main h2{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.subs-mid-section .main p{
+    color: white;
+ 
+}
+
+.subs-mid-section .main input{
+    padding: 1rem 1.5rem;
+    border: 0;
+    outline: none;
+    border-radius: 24px;
+}
+
+.smBtn3 {
+    position: absolute;
+    top: 1px;
+    left: 160px;
+}
+
+.smBtn3 button:hover{
+    background-color: #333;
+    color: wheat;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.smBtn3 button{
+    background-color: rgb(29, 25, 25);
+    padding: 0.8rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border: 0;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    border-radius: 24px;
+    letter-spacing: 0.1rem; 
+    height: 100%;
+
+}
+
+.subs-mid-section .main .inputButton{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5px;
+}
+
+.subs-mid-section .main ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.subs-mid-section .main ul li{
+    list-style: none;
+}
+
+.subs-mid-section .main ul a{
+   
+    color: white;
+}
+
+
+.subs-mid-section ul .fa:hover{
+    background-color: white;
+    color: #333;
+    transition-duration: 0.4s;
+}
+
+
+.subs-mid-section .main .fa-facebook{
+    padding: 9px 13px;
+    border-radius: 100%;
+
+}
+
+.subs-mid-section .main .fa-twitter{
+    
+    padding: 9px 10px;
+}
+
+.subs-mid-section .main .fa-instagram{
+   
+    padding: 9px 11px;
+}
+
+.subs-mid-section .main .fa-linkedin{
+    
+    padding: 9px 11px;
+}
+
+.subs-mid-section .the-end ul a span{
+    color: white;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+
+}
+
+
+/** Subscribe Section Ends **/
+
+/** Footer Starts **/
+
+footer{
+    width: 100%;
+    background-color: rgb(12, 9, 9);
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    color: rgb(219, 198, 198);
+}
+
+.all-content .single h2{
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.all-content a{
+    color: rgb(219, 210, 210);
+    text-decoration: none;
+}
+
+.all-content a:hover{
+    color: #FF5200;
+}
+
+.all-content .first ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+    margin-top: 2rem;
+}
+
+.all-content .first p{
+    color: rgb(224, 201, 201);
+    
+}
+
+.all-content .single h2{
+    margin-bottom: 1rem;
+}
+
+footer .all-content{
+   display: flex;
+   justify-content: space-between;
+}
+
+.all-content li{
+    list-style: none;
+}
+
+.all-content .second li{
+    margin: 0.8rem 0;
+}
+
+.all-content .second hr{
+    border: 0;
+    border-bottom: 1px solid;
+}
+
+.all-content .single{
+    width: 30%;
+}
+
+.last .top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.last .top .left{
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: rgb(41, 37, 37);
+    color: white;
+}
+
+.last .top .left h5{
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.last .top .right{
+    width: 75%;
+}
+
+.last .top .right h3{
+    font-weight: 500;
+}
+
+.last .top .right p{
+    margin-top: 5px;
+    color: rgb(207, 185, 185);
+}
+
+
+/** Footer Ends **/
+
+/** Last Footer Starts **/
+
+.lastHr{
+    border: 0;
+    border-bottom: 1px solid rgb(126, 109, 109);
+    margin-top: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+.lastFooter{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.lastFooter ul{
+    display: flex;
+   
+}
+
+.lastFooter ul li{
+    list-style: none;
+}
+
+.lastFooter p{
+    color: rgb(185, 164, 164);
+}
+
+.lastFooter .one{
+    width: 50%;
+    
+}
+
+.lastFooter .two{
+    width: 15%;
+    text-align: center;
+}
+
+.lastFooter .three {
+    width: 46%;
+    padding-left: 13%;
+}
+
+.container.lastFooter ul a {
+    color: #c4adad;
+    margin-left: 1.9rem;
+    text-decoration: none;
+  
+}
+
+/** Last Footer Ends **/
+
+/** Media Query Starts Here **/
+
+@media only screen and (max-width:1200px){
+    .our-team-section .main .text {
+        padding: 1.8rem 0rem;
+        
+    }
+
+    .latest-idea .right {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+
+}
+
+@media only screen and (max-width:1190px){
+    .news-mid-section .single .caption {
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+       
+    }
+
+    .news-mid-section .single .caption h3 {
+        margin: 1rem 0rem;
+        
+    }
+
+    .news-mid-section .single .caption p {
+        margin-bottom: 0.6rem;
+    }
+
+    .subs-mid-section .main ul {
+               
+        margin-top: 1.2rem;
+    }
+}
+
+
+@media only screen and (max-width:1105px){
+    .news-mid-section .single .caption {
+        padding-top: 0.2rem;
+        padding-bottom: 0.7rem;
+       
+    }
+
+    .news-mid-section .single .caption h4 {
+        margin-top: 0.2rem;
+       
+    }
+
+    .news-mid-section .single .caption h3 {
+        margin: 0.4rem 0rem;       
+
+    }
+
+    .our-team-section .social-icons ul a {
+        margin: 0;
+      }
+
+    .lastFooter .three {
+    
+        padding-left: 9%;
+    }
+}
+
+
+@media only screen and (max-width:1040px){
+   
+    .our-team-section .social-icons ul {
+        width: 92%;
+    }
+
+    .our-team-section .social-icons ul a {
+        margin: 0 0;
+    }
+
+    .news-mid-section .single .caption h3 {
+        margin: 0.5rem 0rem;
+        font-size: 1.2rem;
+    }
+
+    .our-team-section .main .text {
+        padding: 1.3rem 0rem;
+    }
+
+    .pricePlan .inner {       
+        padding-left: 1.7rem;
+        padding-right: 1.7rem;
+    }
+
+    
+    .lastFooter .three {
+    
+        padding-left: 8%;
+    }
+
+}
+
+@media only screen and (max-width:1000px){
+
+    .info-mdsection .main {
+        width: 49%;
+        margin-bottom: 1rem;
+       
+    }
+    
+    .lastFooter .three {
+    
+        padding-left: 8%;
+    }
+}
+
+@media only screen and (max-width:975px){
+   
+   
+
+    .smBtn3 button{
+        padding: 0.5rem 1.2rem;
+        font-size: 1.1rem;
+        font-weight: 400;
+        font-family: 'Work Sans', sans-serif;
+         
+    }
+
+    .subs-mid-section .main input {
+        padding: 0.6rem 1.2rem;
+    }
+    
+}
+
+@media only screen and (max-width:960px){
+ 
+
+    .news-mid-section .single .pic {
+        height: 38%;
+    }
+   
+    .lastFooter .three {
+    
+        padding-left: 7%;
+    }
+}
+
+@media only screen and (max-width:940px){
+
+    .our-team-section .social-icons ul {
+        width: 100%;
+    }
+
+    .lastFooter .three {
+    
+        padding-left: 5.7%;
+    }
+
+    .all-content .last .top .right h3 {
+        
+        font-size: 14px;
+    }
+
+    .all-content .last .top .right {
+        width: 72%;
+    }
+
+    .all-content .last .top .left {
+        width: 23%;
+    }
+}
+
+@media only screen and (max-width:925px){
+    .project-midsection {
+        align-items: center;
+    }
+
+    .project-midsection .inner{
+         max-width: 0 0.9rem;
+
+    }
+
+    .lastFooter .three {
+    
+        padding-left: 5%;
+    }
+
+    .container.lastFooter ul a {
+        color: #c4adad;
+        margin-left: 0;
+        margin-right: 1rem;
+        text-decoration: none;
+    }
+
+}
+
+@media only screen and (max-width:895px){
+    .info-mdsection{
+      align-items: center;
+    }
+
+    .info-mdsection .main {
+        width: 48%;
+        margin-bottom: 3rem;
+    }
+
+    .our-team-section .social-icons ul {
+        width: 60%;
+    }
+
+    .more-section .main {
+        width: 48%;
+        margin-bottom: 1.5rem;
+    }
+
+    .pricePlan .inner .onlyIcon {
+        width: 16%;
+    }
+
+    .our-team-section .main {
+        width: 48%;
+        margin-bottom: 2rem;
+    }
+
+    .smBtn3 {
+       
+        left: 150px;
+    }
+    
+}
+@media only screen and (max-width:890px){
+    .pricePlan .inner {
+        width: 96%;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+
+    .pricePlan .mid-section{
+        flex-wrap: wrap;
+    }
+
+}
+@media only screen and (max-width:865px){
+    .news-mid-section .single .pic {
+        height: 34%;
+    }
+}
+
+@media only screen and (max-width:852px){
+
+    .nav-flex ul a {
+        
+        font-size: 1rem;
+       
+    }
+
+    .smBtn3 {
+       
+        left: 140px;
+    }
+
+    .all-content .first ul {
+        margin-right: 6rem;
+    
+    }
+}
+
+@media only screen and (max-width:830px){
+
+    /* html{
+        font-size: 13px;
+    } */
+
+    .customIcon {
+        display: block;
+    }
+
+    .nav-flex ul {
+        position: absolute;
+        text-align: center;
+        background-color: #fff;
+        width: 80%;
+        flex-direction: column;
+        padding: 1rem 0;
+        transform: scaleY(0.0);
+        top: 100%;
+        transition: all 0.5s;
+
+    }
+
+    .nav-flex .activeUl{
+     
+        transform: scaleY(1);
+    }
+
+    .nav-flex ul li {
+        display: block;
+        width: 100%; 
+        margin: 0.6rem 0;
+        padding: 0.3rem 0;
+    }
+
+    .nav-flex ul a{
+      
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        
+    }
+
+    .nav-flex ul li:hover{
+      background-color: rgb(234 222 222);
+      transition-duration: 0.6s;
+      color: white;
+    }
+    
+    .customIcon:hover .fa{
+        color: #FF5200;
+        transition-duration: 0.4s;
+    } 
+
+    .cap-bg h2 {
+        font-size: 1rem;
+        
+    }
+
+    .cap-bg h1 {
+        font-size: 2rem;
+      
+    }
+
+    .wwt-midsection {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .wwt-midsection .text-info {
+        width: 100%;
+    }
+
+    .wwt-midsection h1 {
+        font-size: 1.6rem;
+        
+        font-weight: 500;
+    }
+
+    .sameHr h1 {
+        
+        font-size: 1.6rem;
+        
+    }
+
+    .wwt-midsection .pic {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .subs-mid-section {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0.3rem;
+    }
+
+    .subs-mid-section .the-end {
+        
+        padding-left: 0;
+    }
+
+    .subs-mid-section .main{
+        width: 70%;
+        margin-bottom: 1.7rem;
+    }
+
+    .subs-mid-section .main h2 {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .subs-mid-section .first{
+        text-align: center;
+    }
+
+    .subs-mid-section .main .inputButton {
+        
+        justify-content: center;
+        
+    }
+
+    .smBtn3 {
+       
+        left: 230px;
+    }
+
+    .subs-mid-section .main p {
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+    }
+
+
+    .lastFooter {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .lastFooter .one {
+        width: 100%;
+        padding-bottom: 1rem;
+    }
+
+   
+    .lastFooter .three {
+    width: 100%;
+    }
+    
+    .lastFooter .three {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 1.3rem;
+        margin: 0;
+        justify-content: center;
+    }
+
+    
+
+
+    /* .all-content .first ul {
+      
+        margin: 1rem 0;
+        justify-content: space-between;
+    } */
+
+}
+
+
+@media only screen and (max-width:780px){
+   
+
+
+    .phone-email {
+      flex-direction: column;
+    }
+
+    .phone-email p {
+        
+        border-right: 1px solid rgb(253, 248, 248);
+    }
+
+    .brandinfo-flex ul {
+        margin-top: 0.7rem;
+    }
+
+    .icons {
+        margin-top: 0;
+    }
+
+    .pricePlan .mid-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .more-section .main h3 {
+        margin-top: 1.2rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .more-section .main p{
+        text-align: center;
+    }
+
+    .latest-idea {
+       flex-direction: column;
+       align-items: center;
+    }
+
+    .latest-idea .left {
+        width: 95%;  
+        margin-bottom: 2rem;    
+    }
+
+    .latest-idea .right {
+        width: 100%;    
+    }
+
+    .latest-idea .icon {
+       
+       text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:750px){
+
+
+    footer .all-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .all-content .single {
+        width: 70%;
+        margin-top: 1.2rem;
+    }
+
+    .all-content .single h2 {
+        text-align: center;
+        font-size: 1.2rem;
+
+    }
+
+    .last .top .right p {
+        font-weight: 400;
+    }
+
+    footer {
+      
+        padding-top: 5rem;
+        padding-bottom: 0;
+    }
+
+    .project-midsection{
+        flex-direction: column;
+
+    }
+
+    .project-midsection .inner{
+        width: 70%;
+    }
+
+    .news-mid-section {
+       
+      flex-direction: column;
+    }
+
+    .news-mid-section .single {
+        width: 90.5%;
+        margin-bottom: 3rem;
+    }
+
+
+}
+
+@media only screen and (max-width:705px){
+    .smBtn3 {
+        left: 200px;
+    }
+}
+
+@media only screen and (max-width:680px){
+    
+    .sameHr h1 {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+}
+
+@media only screen and (max-width:650px){
+    .container.lastFooter ul a {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .sameHr h1 {
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+
+
+    .smBtn3 {
+        left: 180px;
+    }
+
+
+}
+
+@media only screen and (max-width:610px){
+ 
+    .slideText h1 {
+        font-size: 2.3rem;
+       
+    }
+
+    .slideText {
+        width: 70%;
+    }
+
+    .info-section {
+       
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .info-mdsection .main {
+        
+        margin-bottom: 1.3rem;
+    }
+
+    /* Nonember 5-2022
+    
+    .smBtn {
+        padding: 0.6rem 0.9rem;
+        font-weight: 500;
+        font-size: 0.9rem;
+    } */
+
+    /* .pricePlan .inner button{
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+        
+    } */
+
+    .wwt-midsection {
+        
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .more-section .mid-section {    
+        margin-top: 1rem;
+    }
+
+    .sameHr h1 {
+        font-size: 1.5rem;
+        
+    }
+
+    .more-section .main {
+        margin-top: 0.7rem;
+        margin-bottom: 1rem;
+    }
+
+    .pricePlan {
+        
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .pricePlan .inner {
+        margin-bottom: 0.6rem;
+    
+    }
+
+    .more-section .main h3 {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .latest-idea .icon span {
+        font-size: 2.2rem;
+        color: #FF5200;
+    }
+
+    .latest-idea .textAndicon h2 {
+        
+        font-size: 1.2rem;
+    }
+
+    .latest-idea .right .textAndicon {
+        padding-top: 1.2rem;
+    }
+
+    .smBtn3 {
+        left: 160px;
+    }
+    
+}
+
+@media only screen and (max-width:590px){
+   
+    .container.wwt-midsection .listItems {
+        flex-direction: column;
+    }
+
+    .our-team-section .social-icons ul {
+        width: 80%;
+        
+    }
+}
+
+@media only screen and (max-width:570px){
+    .brandinfo-flex a {
+        padding: 0rem 0.7rem; 
+    }
+
+    .brandinfo-flex ul .fa {
+        font-size: 1rem;
+    }
+
+    .info-mdsection .main {
+        width: 100%;
+        
+    }
+    
+
+    .sameHr hr {
+        border-bottom: 2px solid #FF5200;
+        width: 9%;
+        margin: 0.7rem 0rem;
+    }
+
+    .more-section .mid-section {
+        margin-top: 2rem;
+    }
+
+    .latest-idea h1 {
+        font-size: 1.5rem;
+    }
+
+    .our-team-section .main .text h3 {
+        font-size: 1.2rem;
+        
+    }
+
+    .project-midsection .inner h2 {
+        font-weight: 500;
+        line-height: 26px;
+        font-size: 1.3rem;
+    }
+
+}
+
+
+
+@media only screen and (max-width:535px){
+
+    .cap-bg span {
+        font-size: 2rem; 
+    }
+
+    .cap-bg h1 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .our-team-section .main .text h3 {
+        font-size: 1rem;
+        font-weight: 600;
+        
+    }
+
+}
+
+@media only screen and (max-width:460px){
+
+    .nav-flex ul a {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .brandinfo-flex ul {
+        flex-direction: column;
+    }
+
+    .brandinfo-flex a{
+        border: 0;
+    }
+
+    .brandinfo-flex a:last-child {
+        border-right: 0;
+    }
+
+    .info-mdsection .main {
+        width: 100%;
+    }
+
+    .cap-bg span {
+        font-size: 1.8rem;
+        color: white;
+    }
+
+}
+
+
+@media(max-width:495px) {
+    
+
+    .subs-mid-section .main .inputButton {
+        
+        flex-direction: column;
+    }
+
+    .subs-mid-section .main input {
+        margin-bottom: 0.5rem;
+    }
+
+    .smBtn3 {
+        position: unset;
+       
+    }
+
+    .inputButton .input{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+@media only screen and (max-width:390px){
+
+    html{
+        font-size: 13px;
+    }
+
+    .smBtn{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .slideText {
+        width: 80%;
+    }
+
+    .wwt-midsection .pic {
+        width: 100%;
+        margin-bottom: 2.7rem;
+    }
+
+    .wwt-midsection .text-info {
+        width: 100%;
+    }
+
+    .text-info .listItems a {
+        font-size: 14px;
+    }
+
+    .more-section .main {
+        width: 100%;
+    }
+    .pricePlan .inner h1 {
+        font-size: 2rem; 
+    }
+    
+
+    .pricePlan .inner .listIcon {
+        margin: 10px 0px;
+    }
+
+    .pricePlan .inner li {
+        list-style: none;
+        font-size: 14px;
+    }
+
+    .pricePlan .listIcon span {
+        font-size: 13px;
+    }
+
+    .latest-idea .left {
+        width: 100%;
+    }
+
+    .our-team-section .main {
+        width: 100%;
+    }
+
+    
+
+    .latest-idea .right {
+        width: 100%;
+    }
+
+    .latest-idea .right h1{
+        font-weight: 600;
+    }
+
+    .latest-idea .textAndicon h2 {
+        font-size: 14px;
+    }
+
+    .latest-idea .icon span {
+        font-size: 1.4rem;
+    }
+
+    .project-midsection .inner h5 {
+        
+        font-size: 0.9rem;
+        
+    }
+
+    .project-midsection .inner h2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .project-midsection .inner a {
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    .our-projects {
+        
+        padding: 2rem 0rem;
+        
+    }
+
+    .latest-news {
+        padding-top: 3rem;
+    }
+
+    .news-mid-section .single .caption a {
+        font-size: 14px;
+    }
+
+    .project-midsection .inner {
+        width: 100%;
+    }
+
+    .news-mid-section .single {
+        width: 100%;
+    }
+
+    .subs-mid-section .main {
+        width: 100%;
+    }
+
+    /* .smBtn3 button {
+        padding: 0.3rem 0.9rem;
+        font-size: 1rem;
+        
+    } */
+
+    .subs-mid-section .main input {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .subs-mid-section .main input {
+        margin-bottom: 0.5rem;
+    }
+
+
+    .all-content .single {
+        width: 100%;
+       
+    }
+
+    .all-content a {
+        color: rgb(219, 210, 210);
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    .all-content .last .top .left {
+        width: 19%;
+    }
+
+    .all-content .last .top .right {
+        width: 78%;
+    }
+
+    .all-content .top .left h3 {
+        font-weight: 400;
+    }
+
+    .all-content .second li {
+        margin: 0.4rem 0;
+    }
+
+    .last .top .left h5 {
+        font-weight: 500;
+    }
+
+    .last .top .right p {
+        font-size: 0.9rem;
+    }
+
+    .lastFooter .one {
+        width: 100%;
+        text-align: left;
+
+    }
+
+    .lastFooter .three {
+        width: 100%;
+    }
+
+    
+
+}
+
+
+
+/** Media Query Starts Here **/
